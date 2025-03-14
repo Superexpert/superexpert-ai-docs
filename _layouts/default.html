@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <h1>Superexpert.AI</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="{{ "/" | relative_url }}">Home</a></li>
+                <li><a href="https://github.com/Superexpert/superexpert-ai">Download</a></li>
+                <li><a href="{{ "/docs/quick-start" | relative_url }}">Quick Start</a></li>
+                <li><a target="_new" href="https://demo.superexpert.ai">Demo</a></li>
+                <li><a href="{{ "/docs" | relative_url }}">Docs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>&copy; 2025 Superexpert</p>
+    </footer>
+</body>
+</html>
