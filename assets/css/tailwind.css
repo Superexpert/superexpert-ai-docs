@@ -16,6 +16,11 @@
   }
 }
 
+
+pre {
+  @apply p-4 mt-4 mb-4;
+}
+
 .intro-text {
   @apply p-6 bg-gray-100 text-gray-700 rounded-lg shadow-md mb-6;
 }
@@ -34,15 +39,20 @@ h1 {
 }
 
 h2 {
-  @apply text-xl font-bold mb-4;
+  @apply text-2xl font-bold mb-4 mt-4;
 }
 
+h3 {
+  @apply text-xl font-bold mb-4 mt-4;
+}
+
+
 ul {
-  @apply list-disc list-outside pl-5 mb-8;
+  @apply list-disc list-outside pl-5 m-8;
 }
 
 ol {
-  @apply list-decimal list-inside;
+  @apply list-decimal list-inside m-8;
 }
 
 li {
