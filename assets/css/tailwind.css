@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-500: #3490dc;
+  --font-sans: 'Helvetica Neue', sans-serif;
+  --breakpoint-lg: 1024px;
+  --font-display: "Satoshi", "sans-serif";
+}
+
+@layer utilities {
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 text-white rounded;
+  }
+}
+
+.intro-text {
+  @apply p-6 bg-gray-100 text-gray-700 rounded-lg shadow-md mb-6;
+}
+
+main {
+  @apply bg-white text-gray-800 font-sans p-6;
+}
+
+
+header {
+  @apply bg-gray-300 text-gray-800 p-6;
+}
+
+h1 {
+  @apply text-3xl font-bold mb-4;
+}
+
+h2 {
+  @apply text-xl font-bold mb-4;
+}
+
+ul {
+  @apply list-disc list-outside pl-5 mb-8;
+}
+
+ol {
+  @apply list-decimal list-inside;
+}
+
+li {
+  @apply mb-2;
+}
+
+a {
+  @apply text-blue-600 hover:text-blue-800 underline;
+}
+strong {
+  @apply font-bold;
+}
+
+footer {
+  @apply bg-gray-300 text-gray-800 p-6;
+  @apply text-center;
+}
+
+
