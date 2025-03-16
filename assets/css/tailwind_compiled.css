@@ -2235,6 +2235,9 @@
     color: var(--color-white);
   }
 }
+p {
+  padding-bottom: calc(var(--spacing) * 4);
+}
 pre {
   margin-top: calc(var(--spacing) * 4);
   margin-bottom: calc(var(--spacing) * 4);

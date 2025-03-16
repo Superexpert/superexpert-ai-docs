@@ -16,6 +16,9 @@
   }
 }
 
+p {
+  @apply pb-4;
+}
 
 pre {
   @apply p-4 mt-4 mb-4;
