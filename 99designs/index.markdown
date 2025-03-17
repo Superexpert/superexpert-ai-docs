@@ -27,7 +27,7 @@ For syntax highighting, I can use any of these themes: https://jwarby.github.io/
 
 ## Responsiveness
 
-Both the Superexpert.AI platform and the Superexpert webiste need to work on both desktop and mobile.
+Both the Superexpert.AI platform and the Superexpert website need to work on both desktop and mobile.
 
 ## Terminology
 
