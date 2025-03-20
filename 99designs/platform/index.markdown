@@ -30,6 +30,10 @@ The Superexpert.AI platform needs to work on both desktop and mobile.
 * "Open Source" -- Not "Open-Source".
 * "Platform" -- Superexpert.AI is a "platform" and not a "framework."
 
+## Inspiration
+
+* [GitHub Settings Page](github.pdf) - Organizes complex set of user settings in a clean way.
+
 ## Pages
 
 I need designs for the following 4 pages:
@@ -69,4 +73,6 @@ create a new agent, edit existing agents, edit the tasks associated with an agen
 * goal: Simple but distinctive. A second version of the chat interface that is dramatically different than Chat Form 1. 
 * location: You can view this page at [https://demo.superexpert.ai](https://demo.superexpert.ai) by creating a new agent and clicking "Chat." I've also grabbed the page in a [PDF file](chat.pdf){:target="_blank"}. 
 * audience: The audience is the end users of the Superexpert AI platform -- not the software engineers but their customers.
+
+
 
