@@ -1,77 +1,43 @@
 @import "tailwindcss";
 
-@theme {
-  --color-primary-500: #3490dc;
-  --font-sans: 'Helvetica Neue', sans-serif;
-  --breakpoint-lg: 1024px;
-  --font-display: "Satoshi", "sans-serif";
+/* Define custom font-face for Nunito */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/assets/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.woff2') format('woff2');
 }
 
-@layer utilities {
+/* Variable font for italic text */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/assets/fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.woff2') format('woff2');
+} 
+
+
+
+/* Apply Nunito font directly to the html element */
+html {
+  font-family: 'Nunito', sans-serif;
+}
+
+
+/* index page */
+
+@theme {
+  --color-orange1: #FFA500; 
+  --color-black1: #111111;
+  --color-black2: #393C44;
 }
 
 @layer components {
-  .btn {
-    @apply px-4 py-2 text-white rounded;
+  .hero {
+    background-color: var(--color-orange1);
   }
+
+
 }
-
-p {
-  @apply pb-4;
-}
-
-pre {
-  @apply p-4 mt-4 mb-4;
-}
-
-.intro-text {
-  @apply p-6 bg-gray-100 text-gray-700 rounded-lg shadow-md mb-6;
-}
-
-main {
-  @apply bg-white text-gray-800 font-sans p-6;
-}
-
-
-header {
-  @apply bg-gray-300 text-gray-800 p-6;
-}
-
-h1 {
-  @apply text-3xl font-bold mb-4;
-}
-
-h2 {
-  @apply text-2xl font-bold mb-4 mt-4;
-}
-
-h3 {
-  @apply text-xl font-bold mb-4 mt-4;
-}
-
-
-ul {
-  @apply list-disc list-outside pl-5 m-8;
-}
-
-ol {
-  @apply list-decimal list-inside m-8;
-}
-
-li {
-  @apply mb-2;
-}
-
-a {
-  @apply text-blue-600 hover:text-blue-800 underline;
-}
-strong {
-  @apply font-bold;
-}
-
-footer {
-  @apply bg-gray-300 text-gray-800 p-6;
-  @apply text-center;
-}
-
-

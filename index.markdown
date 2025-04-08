@@ -1,101 +1,93 @@
----
-layout: default
-title: home
----
+<!-- Hero Frame -->
 
+<div class="relative overflow-hidden py-20">
+    <!-- Hero Text & Tagline (at the top, above cubes) -->
+    <div class="text-center px-4 mb-8">
+        <div class="w-48 px-6 py-1.5 bg-orange-400/10 rounded-2xl shadow-[0px_5px_20px_-2px_rgba(0,0,0,0.07)] outline outline-1 outline-offset-[-1px] outline-stone-300 inline-flex justify-center items-start gap-2.5">
+            <div class="flex justify-center items-center gap-2">
+                <div class="w-4 h-4 relative">
+                    <div class="w-4 h-4 left-0 top-0 absolute">
+                        <img src="/assets/home/github.svg" />
+                    </div>
+                </div>
+                <div class="justify-start text-neutral-900 text-base font-semibold font-['Nunito_Sans'] underline leading-snug">
+                    Stars on Github
+                </div>
+            </div>
+        </div>
+        <!-- Hero Text -->    
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-black1 mb-4 mt-6">
+            <span class="font-medium">Open Source AI</span>
+            <span class="font-extrabold">Made Simple</span>
+        </h1>
+        <!-- Tagline -->
+        <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl">
+            Build advanced, multi-task AI Agents—no coding required
+        </p>  
+    </div>
 
-# Headline: "Open Source AI Made Simple"
+  <!-- Cubes Image & Buttons Container -->
+  <div class="relative flex justify-center">
+    <!-- Cubes image -->
+    <img 
+      src="/assets/home/cubes.png" 
+      alt="Cubes Illustration" 
+      class="max-w-full h-auto"
+    />
+    <!-- Buttons positioned at the top of cubes -->
+    <div class="absolute top-0 flex justify-center gap-2 sm:gap-4 mt-2 sm:mt-8 z-10 w-full px-2">
+        <button class="bg-black text-white px-3 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full whitespace-nowrap">
+            Download for FREE on Github
+        </button>
+        <button class="border border-black text-black bg-white px-3 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full whitespace-nowrap">
+            Try the Live Demo
+        </button>
+    </div>  
+  </div>
+</div>
+<!--
+<div>
+OLD
+</div>
 
-## Sub-headline: "Build advanced, multi-task AI Agents—no coding required"
-
-## Call-to-Action (CTA): "Download for Free on GitHub" (link to https://github.com/Superexpert/superexpert-ai)
-## Secondary Call-to-Action (CTA): "Try the Live Demo - Build a Custom Agent in Under 60 Seconds" (link to https://demo.superexpert.ai/)
-
-# Should emphasize open source
-
-Include "open source (MIT License)” front and center—include a GitHub link icon. (see https://github.com/logos)
-
-# Overview of Features
-
-* ⚡ Build Fast: Deploy sophisticated agents without code.
-
-
-<img src="/assets/home/agent-instructions.jpg" width="400" />
-
-
-* 🌐 Fully Customizable: Declarative APIs to integrate your own tools seamlessly.
-
-```typescript
-@Tool({
-      name:'updateProfile', 
-      description: `Update the user's profile`
-})
-public async updateProfile(
-   @ToolParameter({
-      name: 'name',
-      description: 'The name of the profile property to update',
-   })
-   name: string,
-   @ToolParameter({
-      name: 'value',
-      description: 'The new value for the profile property',
-   })
-   value: string
-) {
-   // Update the user's profile in the database
-```
-
-* 📚 Powerful Data Handling: Easily manage document retrieval (RAG) at scale.
-
-<img src="/assets/home/rag.jpg" width="400" />
-
-
-* 🤖 Multi-Model Compatible: Choose the perfect AI model (OpenAI, Anthropic, Gemini) based on performance and cost.
-
-<img src="/assets/home/ai-models.jpg" width="400" />
-
-
-* 🏗️ Modern Web Application Architecture: Next.js + TypeScript + PostgreSQL for maximum scalability and performance.
-
-# FAQ
-
-
-### 1. How much does Superexpert.AI cost?
-
-The platform is open source (MIT license). You can download from [https://github.com/superexpert/superexpert-ai](https://github.com/superexpert/superexpert-ai) for free. 
-
-### 2. Why should a developer choose Superexpert AI over the multitude of other AI platforms available?
-
-Superexpert AI is an open-source platform empowering developers with the flexibility, transparency, and community support to build and deploy cutting-edge AI applications
-
-### 3. What types of applications can I build with Superexpert.AI?
-
-You can build anything from a simple chatbot to a sophisticated AI Agent that can perform hundreds of distinct tasks. For example, you can use Superexpert.AI to build Customer Service Agents, Knowledge Discovery Tools, Employee Onboarding Systems, and Process Automation Solutions. 
-
-
-For example, a startup can use Superexpert.AI to create a customer support agent that answers product inquiries, checks order status, and processes refunds—without writing a single line of code.
-
-### 4. Can I create custom agents without writing code?
-
-Yes. The Superexpert.AI platform uses a friendly form interface to enable you to configure agents and tasks. You
-can build sophisticated AI solutions without writing a single line of code.
-
-### 5. I have complex needs. How easy is to extend the platform?
-
-The Superexpert.AI platform was designed to be extensible. You can easily add custom tools that load custom data for each task (for example, customer profiles) or execute custom functions (display a modal popup asking a customer to complete a form). Superexpert.AI supports a simple declarative method of making tools available to AI Agents that works across different AI providers.
-
-### 6. I need to build an AI Agent that can answer questions concerning information that is stored in hundreds of documents. Does Superexpert.AI support RAG (Retrieval Augmented Generation)?
-
-Yes. You can upload documents and Superexpert.AI will chunk the documents and generate embeddings for you automatically.
-
-### 7. Where can I deploy my application built with Superexpert.AI?
-
-The Superexpert.AI platform is compatible with Vercel, AWS, GCP, and Azure. You can use any hosting provider that supports Node.js and PostgreSQL.
-
-
-### 8. Can I contribute to the project? What's the process?
-
-Yes. The platform is being actively developed. We happily accept Pull Requests.
-
-
-
+<div class="w-[1512px] h-[830px] relative bg-Background-Background-Primary01">
+    <div class="w-[1546.27px] h-[732.04px] left-[-36px] top-0 absolute bg-neutral-200"></div>
+    <div class="w-[929px] h-[744px] left-[292px] top-[-34px] absolute bg-[radial-gradient(ellipse_65.13%_46.69%_at_53.31%_100.00%,_white_0%,_rgba(255,_255,_255,_0)_100%)]"></div>
+    <div class="w-[1512px] h-60 left-[1512px] top-[233px] absolute origin-top-left rotate-180 bg-gradient-to-l from-white to-white/0"></div>
+    <div class="w-[733px] h-96 left-0 top-[341px] absolute bg-gradient-to-l from-white to-white/0"></div>
+    <div class="w-[779px] h-96 left-[733px] top-[341px] absolute bg-gradient-to-l from-white to-white/0"></div>
+    <div class="w-[1037px] h-[472px] left-[227px] top-[250px] absolute bg-gradient-to-l from-white to-white/0"></div>
+    <div class="w-[1000px] h-[562px] left-[206px] top-[447px] absolute opacity-40 overflow-hidden">
+        <div class="w-[1000px] h-[562px] left-0 top-0 absolute outline outline-1 outline-offset-[-0.50px] outline-zinc-300"></div>
+    </div>
+    <div class="w-[827px] h-[647px] left-[306px] top-[358px] absolute overflow-hidden">
+        <div class="w-[845px] h-[550px] left-[17px] top-[57px] absolute outline outline-[0.40px] outline-offset-[-0.20px] outline-zinc-400"><img src="/assets/home/cubes.png" /></div>
+        <div class="w-44 h-36 left-[329px] top-[202px] absolute bg-orange-700"></div>
+    </div>
+    <div class="left-[204.50px] top-[192px] absolute inline-flex flex-col justify-start items-center gap-12">
+        <div class="flex flex-col justify-start items-start gap-5">
+            <div class="self-stretch text-center justify-center"><span class="text-Text-Text-Primary-Black01 text-7xl font-bold font-['Nunito_Sans'] leading-[94px]">Open Source AI </span><span class="text-neutral-900 text-7xl font-black font-['Nunito_Sans'] leading-[94px]">Made Simple</span></div>
+            <div class="self-stretch text-center justify-start text-Text-Text-Primary-Black01 text-3xl font-semibold font-['Nunito_Sans'] leading-9">Build advanced, multi-task AI Agents—no coding required</div>
+        </div>
+        <div class="shadow-[0px_5px_20px_-2px_rgba(0,0,0,0.07)] inline-flex justify-start items-center gap-3">
+            <div class="w-72 h-14 flex justify-start items-center gap-7">
+                <div class="w-72 h-14 px-12 py-3 bg-black rounded-3xl outline outline-1 outline-offset-[-1px] outline-black flex justify-center items-center gap-2.5">
+                    <div class="text-center justify-start"><span class="text-Text-Text-Invert01 text-base font-bold font-['Nunito_Sans'] leading-normal tracking-wide">Download for FREE on Github</span><span class="text-Text-Text-Invert01 text-base font-bold font-['Nunito_Sans'] uppercase leading-normal tracking-wide"> </span></div>
+                </div>
+            </div>
+            <div class="w-52 self-stretch bg-white rounded-3xl outline outline-1 outline-offset-[-1px] outline-white flex justify-start items-center gap-7">
+                <div class="flex-1 self-stretch relative rounded-3xl outline outline-2 outline-offset-[-2px] outline-black">
+                    <div class="w-48 left-[9px] top-[18px] absolute text-center justify-start text-black text-base font-bold font-['Nunito_Sans'] leading-normal tracking-wide">Try the Live Demo</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-48 px-6 py-1.5 left-[660px] top-[128px] absolute bg-orange-400/10 rounded-2xl shadow-[0px_5px_20px_-2px_rgba(0,0,0,0.07)] outline outline-1 outline-offset-[-1px] outline-stone-300 inline-flex justify-center items-start gap-2.5">
+        <div class="flex justify-center items-center gap-2">
+            <div class="w-4 h-4 relative">
+                <div class="w-4 h-4 left-0 top-0 absolute bg-neutral-900"></div>
+            </div>
+            <div class="justify-start text-neutral-900 text-base font-semibold font-['Nunito_Sans'] underline leading-snug">Stars on Github</div>
+        </div>
+    </div>
+</div> -->
