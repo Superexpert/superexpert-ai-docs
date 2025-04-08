@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <div class="justify-start text-neutral-900 text-base font-semibold font-['Nunito_Sans'] underline leading-snug">
-                    Stars on Github
+                    Stars on GitHub
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
         <!-- Buttons positioned at the top of cubes -->
         <div class="absolute top-0 flex justify-center gap-2 sm:gap-4 mt-2 sm:mt-8 z-10 w-full px-2">
             <button class="bg-black text-white px-3 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full whitespace-nowrap">
-                Download for FREE on Github
+                Download for FREE on GitHub
             </button>
             <button class="border border-black text-black bg-white px-3 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full whitespace-nowrap">
                 Try the Live Demo
@@ -48,7 +48,14 @@
   <div class="max-w-7xl mx-auto text-center">
     <!-- Section Header -->
     <div class="mb-12">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-4">
+        <div class="my-8 h-8 px-6 py-4 bg-white rounded-3xl shadow-[0px_3px_15px_0px_rgba(0,0,0,0.10)] outline outline-1 outline-offset-[-1px] outline-slate-50 inline-flex justify-start items-start gap-1.5">
+            <div class="self-stretch flex justify-start items-center gap-1">
+                <div class="justify-start text-zinc-800 text-base font-normal leading-normal">
+                    Why Choose Superexpert.AI?
+                </div>
+            </div>
+        </div>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-normal text-gray-900 mb-4">
         Open-Source AI with Flexibility and Transparency.
       </h2>
       <p class="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
