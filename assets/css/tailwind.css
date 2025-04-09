@@ -25,13 +25,16 @@ html {
   font-family: 'Nunito', sans-serif;
 }
 
-
+.faq-answer a {
+  @apply text-blue-500 underline;
+}
 /* index page */
 
 @theme {
   --color-orange1: #FFA500; 
   --color-black1: #111111;
   --color-black2: #393C44;
+  --color-backgray: #FBFDFF;
 }
 
 @layer components {
