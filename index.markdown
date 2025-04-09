@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Superexpert.AI - Open Source AI Made Simple"
+---
 <!-- Hero Frame -->
 <section class="relative overflow-hidden pt-20">
     <!-- Hero Text & Tagline (at the top, above cubes) -->
@@ -43,7 +47,7 @@
         </div>  
     </div>
 </section>
-<!-- Features Section -->
+<!-- About Section -->
 <section class="bg-orange-50 py-12 md:py-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto text-center">
     <!-- Section Header -->
@@ -88,3 +92,113 @@
     </div>
   </div>
 </section>
+<!-- Features Section -->
+<section class="py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto text-center">
+        <!-- Section Header -->
+        <div class="mb-12">
+            <div class="my-8 h-8 px-6 py-4 bg-white rounded-3xl shadow-[0px_3px_15px_0px_rgba(0,0,0,0.10)] outline outline-1 outline-offset-[-1px] outline-slate-50 inline-flex justify-start items-start gap-1.5">
+                <div class="self-stretch flex justify-start items-center gap-1">
+                    <div class="justify-start text-zinc-800 text-base font-normal leading-normal">
+                        Overview of Features
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-normal text-gray-900 mb-4">
+                Multi-Task Capabilities: Create Versatile AI Solutions with Ease
+            </h2>
+            <p class="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+                Effortlessly create powerful AI solutions tailored to your specific requirements, enabling seamless integration and enhanced functionality.
+            </p>
+        </div>
+    </div>
+    <!-- Cards -->
+    <!-- Card Container -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+
+  <!-- Card 1: Build Fast -->
+  <div class="flex flex-col-reverse md:flex-row items-center md:justify-between gap-8 md:gap-16">
+    <!-- Text Content -->
+    <div class="md:w-1/2">
+      <span class="inline-block bg-blue-100 text-blue-800 rounded-full px-3 py-1 text-sm font-medium mb-3">Build Fast</span>
+      <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Deploy sophisticated agents without code.</h3>
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        With our innovative platform, you can quickly build and deploy sophisticated AI agents tailored to your needs—all without writing a single line of code.
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="/assets/home/card-feature-1.png" alt="Deploy without code" class="w-full rounded-xl shadow-sm border border-orange-200">
+    </div>
+  </div>
+
+  <!-- Card 2: Fully Customizable -->
+  <div class="flex flex-col-reverse md:flex-row-reverse items-center md:justify-between gap-8 md:gap-16">
+    <!-- Text Content -->
+    <div class="md:w-1/2">
+      <span class="inline-block bg-blue-100 text-blue-800 rounded-full px-3 py-1 text-sm font-medium mb-3">Fully Customizable</span>
+      <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Declarative APIs to integrate your own tools seamlessly.</h3>
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        This flexibility allows you to tailor your AI solutions to fit specific business needs, ensuring that you can enhance productivity and streamline processes without complex coding.
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="/assets/home/card-feature-2.png" alt="Declarative APIs" class="w-full rounded-xl shadow-sm border border-orange-200">
+    </div>
+  </div>
+
+  <!-- Card 3: Powerful Data Handling -->
+  <div class="flex flex-col-reverse md:flex-row items-center md:justify-between gap-8 md:gap-16">
+    <!-- Text Content -->
+    <div class="md:w-1/2">
+      <span class="inline-block bg-blue-100 text-blue-800 rounded-full px-3 py-1 text-sm font-medium mb-3">Powerful Data Handling</span>
+      <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Easily manage document retrieval at scale.</h3>
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        This feature allows you to extract relevant information quickly, enabling your AI agents to provide accurate responses at scale.
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="/assets/home/card-feature-3.png" alt="Manage Data Retrieval" class="w-full rounded-xl shadow-sm border border-orange-200">
+    </div>
+  </div>
+<!-- Card 4: Multi Model -->
+  <div class="flex flex-col-reverse md:flex-row-reverse items-center md:justify-between gap-8 md:gap-16">
+    <!-- Text Content -->
+    <div class="md:w-1/2">
+        <span class="inline-block bg-blue-100 text-blue-800 rounded-full px-3 py-1 text-sm font-medium mb-3">
+            Multi Model
+        </span>
+      <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Declarative APIs to integrate your own tools seamlessly.</h3>
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        This flexibility allows you to tailor your AI solutions to fit specific business needs, ensuring that you can enhance productivity and streamline processes without complex coding.
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="/assets/home/card-feature-4.png" alt="Declarative APIs" class="w-full rounded-xl shadow-sm border border-orange-200">
+    </div>
+  </div>
+
+  <!-- Card 5: Modern Web -->
+  <div class="flex flex-col-reverse md:flex-row items-center md:justify-between gap-8 md:gap-16">
+    <!-- Text Content -->
+    <div class="md:w-1/2">
+      <span class="inline-block bg-blue-100 text-blue-800 rounded-full px-3 py-1 text-sm font-medium mb-3">
+        Modern Web
+        </span>
+      <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Easily manage document retrieval at scale.</h3>
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        This feature allows you to extract relevant information quickly, enabling your AI agents to provide accurate responses at scale.
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="/assets/home/card-feature-5.png" alt="Manage Data Retrieval" class="w-full rounded-xl shadow-sm border border-orange-200">
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+{% include faq.html %}

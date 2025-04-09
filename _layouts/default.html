@@ -21,11 +21,11 @@
       <!-- Desktop Navigation -->
       <nav class="hidden md:block">
         <ul class="flex space-x-6 text-sm font-medium text-black2">
-          <li><a href="#" class="hover:text-black">Download</a></li>
-          <li><a href="#" class="hover:text-black">Quick Start</a></li>
-          <li><a href="#" class="hover:text-black">Demo</a></li>
-          <li><a href="#" class="hover:text-black">Docs</a></li>
-          <li><a href="#" class="hover:text-black">Plugins</a></li>
+          <li><a href="https://github.com/Superexpert/superexpert-ai" class="hover:text-black">Download</a></li>
+          <li><a href="/docs/quick-start" class="hover:text-black">Quick Start</a></li>
+          <li><a href="https://demo.superexpert.ai" class="hover:text-black">Demo</a></li>
+          <li><a href="/docs" class="hover:text-black">Docs</a></li>
+          <li><a href="/plugins" class="hover:text-black">Plugins</a></li>
         </ul>
       </nav>
   
@@ -52,11 +52,11 @@
     <!-- Mobile Dropdown Menu -->
     <nav id="mobileMenu" class="hidden md:hidden bg-white shadow-md">
       <ul class="flex flex-col items-start px-4 py-2 space-y-2 text-sm font-medium text-black2">
-        <li><a href="#" class="block py-1 hover:text-black">Download</a></li>
-        <li><a href="#" class="block py-1 hover:text-black">Quick Start</a></li>
-        <li><a href="#" class="block py-1 hover:text-black">Demo</a></li>
-        <li><a href="#" class="block py-1 hover:text-black">Docs</a></li>
-        <li><a href="#" class="block py-1 hover:text-black">Plugins</a></li>
+        <li><a href="https://github.com/Superexpert/superexpert-ai" class="block py-1 hover:text-black">Download</a></li>
+        <li><a href="/docs/quick-start" class="block py-1 hover:text-black">Quick Start</a></li>
+        <li><a href="https://demo.superexpert.ai" class="block py-1 hover:text-black">Demo</a></li>
+        <li><a href="/docs" class="block py-1 hover:text-black">Docs</a></li>
+        <li><a href="/plugins" class="block py-1 hover:text-black">Plugins</a></li>
       </ul>
     </nav>
   </header>
@@ -77,8 +77,12 @@
     <main>
         {{ content }}
     </main>
-    <footer>
-        <p>&copy; 2025 Superexpert</p>
+    <footer class="py-8 text-center">
+      <div class="inline-flex flex-col justify-start items-start gap-6">
+        <div class="self-stretch justify-start text-zinc-600 text-sm font-normal leading-normal tracking-wide">
+          &copy; 2025 Superexpert.AI 
+        </div>
+    </div>
     </footer>
 </body>
 </html>

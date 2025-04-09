@@ -1,0 +1,35 @@
+<section class="max-w-3xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+  
+    <div class="space-y-4">
+      {% for faq in site.data.faqs %}
+        <div class="border-b border-gray-200 pb-4">
+          <button class="w-full flex justify-between items-center py-3 text-left text-lg font-medium text-gray-800 hover:text-orange-500 focus:outline-none faq-question">
+            <span>{{ faq.question }}</span>
+            <span class="text-2xl">+</span>
+          </button>
+          <div class="faq-answer hidden text-gray-600 pt-2">
+            <p>{{ faq.answer | markdownify }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+  
+  <!-- FAQ JavaScript (Vanilla JS toggle) -->
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+  
+    faqQuestions.forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.classList.toggle('hidden');
+  
+        // Toggle plus/minus icon
+        const icon = button.querySelector('span:last-child');
+        icon.textContent = icon.textContent === '+' ? '–' : '+';
+      });
+    });
+  });
+  </script>
