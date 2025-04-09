@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Superexpert.AI - Open Source AI Made Simple"
+description: "Superexpert.AI is an open-source platform empowering developers with the flexibility, transparency, and community support to build and deploy cutting-edge AI applications."
 ---
 <!-- Hero Frame -->
 <section class="relative overflow-hidden pt-20">
