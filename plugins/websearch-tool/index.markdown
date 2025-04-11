@@ -21,27 +21,26 @@ title: Superexpert.AI Plugins - Websearch Tool
         </div>
     </div>
     <div class="max-w-4xl mx-auto">
-        <h2 class="font-bold text-2xl">Installation</h2>
-        Execute the following command from the root of your superexpert-ai project folder:
-<div markdown="1">
-```bash
-npm install @superexpert-ai/websearch-tool
-```
-<p class="py-2">
-    Add the plugin to your superexpert-ai/superexpert-ai.plugins.server.ts file:
+
+<h2 class="font-bold text-2xl">Installation</h2>
+<p class="py-4">
+Execute the following command from the root of your superexpert-ai project folder:
 </p>
-{% highlight ruby linenos hl_lines="2,4-6" %}
-import '@/lib/adapters/llm-adapters/system-adapters'; 
-import './lib/system-tools/system-server-data';
-import './tools/server-data';
-import './lib/system-tools/system-server-tools';
-import './tools/server-tools';
-import './lib/system-tools/system-client-tools';
-import './tools/client-tools';
-import '@superexpert-ai/websearch-tool';
+{% highlight bash %}
+npm install @superexpert-ai/websearch-tool
 {% endhighlight %}
 
-</div>
+<p class="py-4">
+    Add the plugin to your superexpert-ai/superexpert-ai.plugins.server.ts file:
+</p>
+{% highlight js %}
+// other plugins...
+import '@superexpert-ai/websearch-tool';
+{% endhighlight %}
+<h2 class="font-bold text-2xl pt-4">Usage</h2>
+<p class="py-4">
+After installion, you can pick the <code>Web Search Tool</code> plugin as a server tool or as a context data tool.
+</p>
     </div>
 </section>
 
