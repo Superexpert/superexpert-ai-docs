@@ -38,9 +38,17 @@ html {
 }
 
 @layer components {
-  .hero {
-    background-color: var(--color-orange1);
-  }
 
+    pre.highlight, figure.highlight pre {
+        @apply bg-gray-100 dark:bg-gray-800;
+      @apply p-6;
+    }
+
+    .hll {
+      background-color: #fffae6;
+      border-left: 4px solid #ffd33d;
+      display: block;
+      padding-left: 8px;
+  }
 
 }
