@@ -1,102 +1,112 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: content
+title: Superexpert.AI Installation Walkthrough
+tag: Docs
+heading: Superexpert.AI Installation Walkthrough
+subheading: Quickly set up Superexpert.AI locally from GitHub
 
-layout: default
-title: Superexpert.AI - Install in Minutes
+---
+<article>
+{% capture markdown_content %}
+
+# Installation Walkthrough: Set Up Superexpert.AI in Minutes
+
+This walkthrough will guide you through setting up the Superexpert.AI platform on your local machine. Follow these simple steps to get your AI agent up and running in minutes!
+
+## Prerequisites
+
+Make sure you have the following installed:
+- **Node.js** (18.18 or later)
+- **PostgreSQL**
+- **pgvector** (required for vector embeddings)
+
 ---
 
+## Step 1 — Install Node.js
 
-# Superexpert.AI: Install in Minutes
-
-**Walkthrough:** Set up Superexpert.AI locally by downloading it from GitHub.
-
-## Step 1: Install Node.js
-
-You'll need Node.js 18.18 or later. You can verify if you have Node.js installed by executing the following command in terminal:
-
+1. Check if you have Node.js installed by running:
 ```bash
 node -v
 ```
-If Node.js is not installed, download and install it from [nodejs.org](https://nodejs.org/).
+2. If Node.js is not installed, download it from [nodejs.org](https://nodejs.org/).
 
-## Step 2: Clone the Superexpert.AI GitHub repo and install dependencies
+---
 
-Clone the superexpert-ai repository by executing the following command in terminal:
+## Step 2 — Clone Superexpert.AI and Install Dependencies
 
+1. Clone the repository:
 ```bash
 git clone https://github.com/Superexpert/superexpert-ai.git
 ```
 
-Switch into the root of the superexpert-ai folder and install all dependencies:
-
+2. Navigate into the project directory and install dependencies:
 ```bash
+cd superexpert-ai
 npm install
 ```
 
+---
 
-## Step 3: Setup PostgreSQL
+## Step 3 — Set Up PostgreSQL
 
-You can check if you have PostgreSQL installed by executing the following command in terminal:
-
+1. Check your PostgreSQL installation:
 ```bash
 psql --version
 ```
 
-If you don't have PostgreSQL installed then download and install it from [PostgreSQL.org](https://www.postgresql.org/){:target="_blank"}.
+2. If PostgreSQL is not installed, download it from [PostgreSQL.org](https://www.postgresql.org/).
 
-Next, create a new PostgreSQL database by accessing the PostgreSQL prompt:
-
+3. Create the database:
 ```bash
 psql
-```
-
-Create a database named superexpert_ai_db by executing the following command:
-
-```bash
 CREATE DATABASE superexpert_ai_db;
+\q
 ```
 
-You can exit psql by entering "\q".
-
-After creating the database, you need to add a connection string to your .env file
-in the root of your Superexpert.AI project. Create a file named .env that contains the following connection string (replace username and password with your actual database credentials)):
-
+4. Configure your database connection by creating a `.env` file in the project root:
 ```bash
 DATABASE_URL=postgresql://username:password@localhost:5432/superexpert_ai_db
 ```
-Finally, create all of the required Superexpert.AI database tables by executing the following command in Terminal
-from the root of your Superexpert.AI project:
+Replace `username` and `password` with your database credentials.
 
+5. Migrate your database to set up the necessary tables:
 ```bash
 npm run migrate
 ```
 
-## Step 4: Install pgvector
+---
 
-To support vector embeddings, you must install pgvector. The easiest way to install pgvector is with homebrew:
+## Step 4 — Install pgvector 
 
+pgvector enables vector embeddings, enabling RAG and greatly enhancing search capabilities.
+
+Install via Homebrew:
 ```bash
 brew install pgvector
 ```
 
-Other installation options are described at [https://github.com/pgvector/pgvector](https://github.com/pgvector/pgvector).
+For other installation methods, see [pgvector's GitHub page](https://github.com/pgvector/pgvector).
 
+---
 
+## Step 5 — Run Superexpert.AI Locally
 
-## Step 5: Run Superexpert.AI locally
-
-To start the platform, run the following command:
-
+Start your Superexpert.AI instance:
 ```bash
 npm run dev
 ```
 
-Open a web browser and navigate to localhost:3000. You should see:
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000). You should see your Superexpert.AI instance up and running! Click the **Register** link at the botto of the Login page to create a new account.
 
-![Working Superexpert AI](superexpert-ai-working.jpg)
+![Working Superexpert AI](superexpert-ai-working.png)
+*Figure 1: Superexpert.AI running locally.*
 
-## Problems?
+Your local Superexpert.AI installation is now ready! Start creating AI agents and tasks tailored to your project's needs.
+
+{% endcapture %}
+{{ markdown_content | markdownify }}
+
+</article>
 
 If you encounter any issues walkthrough, please post a message to the [discussions forum](https://github.com/Superexpert/superexpert-ai/discussions).
 
