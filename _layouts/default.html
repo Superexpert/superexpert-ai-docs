@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/tailwind_compiled.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/zenburn.css' | relative_url }}">
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
 
 
   <header class="w-full border-b border-gray-200 relative">
@@ -86,7 +86,7 @@
 
 
 
-    <main>
+    <main class="flex-1">
         {{ content }}
     </main>
     <footer class="py-8 text-center bg-orange-50">
