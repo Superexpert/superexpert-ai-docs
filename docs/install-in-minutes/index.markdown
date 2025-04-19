@@ -74,6 +74,8 @@ Replace `username` and `password` with your database credentials.
 npm run migrate
 ```
 
+> **Note:** The Superexpert.AI GitHub repo includes a .env.example file to help you set up your .env file.
+
 ---
 
 ## Step 4 — Install pgvector 
@@ -89,7 +91,56 @@ For other installation methods, see [pgvector's GitHub page](https://github.com/
 
 ---
 
-## Step 5 — Run Superexpert.AI Locally
+## Step 5 — Configure LLM Provider API Keys
+
+To enable your Superexpert.AI agent to interact with various language models, you’ll need to set up API keys for each provider you intend to use.
+
+1.	**Obtain API Keys:**
+	*	OpenAI: Sign up and generate an API key at [OpenAI’s API page](https://platform.openai.com/account/api-keys).
+	*	Gemini (Google): Create an API key through [Google Cloud Console](https://console.cloud.google.com/apis/credentials).
+	*	Anthropic: Request access and obtain an API key from [Anthropic’s website](https://www.anthropic.com/).
+
+2.	**Update Your .env File:**
+    In the root directory of your Superexpert.AI project, open the .env file and add the following lines, replacing <Your Key> with your actual API keys:
+
+    ```
+    OPENAI_API_KEY='<Your Key>'
+    GEMINI_API_KEY='<Your Key>'
+    ANTHROPIC_API_KEY='<Your Key>'
+    ```
+
+    Ensure there are no extra spaces or quotes beyond what’s shown.
+
+3.	**Security Best Practices:**
+	*	Do not commit your .env file to version control systems like Git.
+
+By configuring these environment variables, your Superexpert.AI agent will be equipped to utilize the capabilities of OpenAI, Gemini, and Anthropic language models.
+
+---
+
+## Step 6 — Configure Authentication with NextAuth.js v5
+
+Superexpert.AI comes pre-configured with NextAuth.js v5 for authentication. To enable it, you need to set the following environment variables in your .env file:
+
+```
+NEXTAUTH_URL='http://localhost:3000'
+NEXTAUTH_SECRET='<Your Secret>'
+```
+
+* NEXTAUTH_URL: Set this to the base URL of your application. In development, it’s typically http://localhost:3000.
+* NEXTAUTH_SECRET: This secret is used to encrypt session tokens and other sensitive data. You can generate a secure secret using one of the following methods:
+    * Using OpenSSL:
+    ```
+    openssl rand -base64 32
+    ```
+
+	* Using an online generator: [https://generate-secret.vercel.app/32](https://generate-secret.vercel.app/32)
+
+Ensure that you keep this secret safe and do not expose it publicly.
+
+---
+
+## Step 7 — Run Superexpert.AI Locally
 
 Start your Superexpert.AI instance:
 ```bash
