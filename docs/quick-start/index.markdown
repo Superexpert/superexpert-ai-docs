@@ -31,16 +31,18 @@ In this walkthrough, you'll create an AI agent named **Robot Assistant**. This a
 ## Step 1 — Register and Set Up Your AI Agent
 
 1. Go to the [Superexpert.AI demo site](https://demo.superexpert.ai).
-2. Register a new account.
+2. Click the `Register` link at the bottom of the screen to register a new account.
 3. Immediately after registration, you'll land on the **New Agent** page:
-   - Enter the agent name: `robot-assistant`.
-   - Description: `Assists customers in selecting and buying household robots and tracking their orders.`
+   - Enter a unique name for your agent, for example: `robot-assistant-99`.
+   - Enter the following Description: `Assists customers in selecting and buying household robots and tracking their orders.`
 4. Click **Create**.
 
 ![New Agent](new-agent.png)
 *Figure 1: Creating your first AI Agent*
 
 After creating your agent, you'll land on the **Agents page**, which lists your available agents. Each agent has **Edit**, **Tasks**, and **Chat** buttons.
+
+> **Note:** Agent names, like Internet domain names, must be globally unique.
 
 ---
 
