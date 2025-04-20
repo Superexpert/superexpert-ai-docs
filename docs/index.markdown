@@ -11,15 +11,13 @@ docs:
   - name: "Install in Minutes"
     description: "Set up Superexpert.AI locally by downloading it from GitHub."
     url: "/docs/install-in-minutes/"
-  - name: "Deploy to Production"
-    description: "Deploy Superexpert.AI to Vercel for scalable hosting."
-    url: "/docs/install-in-minutes/"
+  - name: "Create Custom Tools"
+    description: "Learn how to create and use custom tools in Superexpert.AI."
+    url: "/docs/create-custom-tools/"
   - name: "Using RAG (Retrieval Augmented Generation)"
     description: "Work with large datasets by creating a corpus for AI retrieval."
     url: "/docs/install-in-minutes/"
-  - name: "Create Custom Tools"
-    description: "Learn how to create and use custom tools in Superexpert.AI."
-    url: "/docs/install-in-minutes/"
+
 ---
 {% include card-list.html items=page.docs %}
 
