@@ -147,7 +147,7 @@ Start your Superexpert.AI instance:
 npm run dev
 ```
 
-Open your browser and navigate to [http://localhost:3000](http://localhost:3000). You should see your Superexpert.AI instance up and running! Click the **Register** link at the botto of the Login page to create a new account.
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000). You should see your Superexpert.AI instance up and running! Click the **Register** link at the bottom of the Login page to create a new account.
 
 ![Working Superexpert AI](superexpert-ai-working.png)
 *Figure 1: Superexpert.AI running locally.*
@@ -159,5 +159,5 @@ Your local Superexpert.AI installation is now ready! Start creating AI agents an
 
 </article>
 
-If you encounter any issues walkthrough, please post a message to the [discussions forum](https://github.com/Superexpert/superexpert-ai/discussions).
+
 

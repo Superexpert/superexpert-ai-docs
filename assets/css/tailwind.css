@@ -46,7 +46,7 @@ html {
 }
 
 article {
-  @apply max-w-3xl mx-auto bg-white rounded-xl shadow-md border border-gray-200 px-8 py-10 mb-16;
+  @apply max-w-4xl mx-auto bg-white rounded-xl shadow-md border border-gray-200 px-8 py-10 mb-16;
 }
 
 
