@@ -14,9 +14,9 @@ docs:
   - name: "Create Custom Tools"
     description: "Learn how to create and use custom tools in Superexpert.AI."
     url: "/docs/create-custom-tools/"
-  - name: "Using RAG (Retrieval Augmented Generation)"
+  - name: "Using RAG (Retrieval-Augmented Generation)"
     description: "Work with large datasets by creating a corpus for AI retrieval."
-    url: "/docs/install-in-minutes/"
+    url: "/docs/retrieval-augmented-generation/"
 
 ---
 {% include card-list.html items=page.docs %}
