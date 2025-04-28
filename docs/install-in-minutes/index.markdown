@@ -1,6 +1,7 @@
 ---
 layout: content
 title: Superexpert.AI Installation Walkthrough
+description: Learn how to download and install Superexpert.AI so you can start building AI agents.
 tag: Docs
 heading: Superexpert.AI Installation Walkthrough
 subheading: Quickly set up Superexpert.AI locally from GitHub

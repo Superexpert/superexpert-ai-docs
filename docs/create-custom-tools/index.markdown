@@ -1,6 +1,7 @@
 ---
 layout: content
 title: Superexpert.AI - Create Custom Tools
+description: Extend Superexpert.AI with custom server, client, and context tools.
 tag: Docs
 heading: Create Custom Tools
 subheading: Extend Superexpert.AI with Custom Functions

@@ -1,6 +1,7 @@
 ---
 layout: content
 title: Superexpert.AI Quick Start
+description: Learn how to build sophisticated AI agents with OpenAI, Gemini, and Anthropic in minutes
 tag: Docs
 heading: Superexpert.AI Quick Start
 subheading: Learn how to create and customize an AI agent using the Superexpert.AI demo site.
