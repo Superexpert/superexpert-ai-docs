@@ -14,12 +14,20 @@ npm install @superexpert-ai/websearch-tool
 {% endhighlight %}
 
 <p class="py-4">
-    Add the plugin to your superexpert-ai/superexpert-ai.plugins.server.ts file:
+    Add the plugin to your superexpert-ai.plugins.server.ts file:
 </p>
 {% highlight js %}
-// other plugins...
+// other plugins... 
 import '@superexpert-ai/websearch-tool';
 {% endhighlight %}
+
+<p class="py-4">
+    Add your Tavily API key to your .env file (Get a key for free from <a href="https://tavily.com/" target="_blank">Tavily</a>):
+</p>
+{% highlight js %}
+TAVILY_API_KEY=<You API Key>
+{% endhighlight %}
+
 <h2 class="font-bold text-2xl pt-4">Usage</h2>
 <p class="py-4">
 After installion, you can pick the <code>Web Search Tool</code> plugin as a server tool or as a context data tool.

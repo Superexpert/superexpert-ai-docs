@@ -2526,12 +2526,20 @@ html {
   color: var(--color-blue-500);
   text-decoration-line: underline;
 }
-@layer components {
-  .highlight code, .highlight pre {
-    overflow-x: auto;
-    padding: calc(var(--spacing) * 6);
-  }
+.highlight pre {
+  white-space: pre;
+  word-break: normal;
+  overflow-x: auto;
+  padding: 1.5rem;
+  background-color: #3f3f3f;
+  border-radius: 0.375rem;
 }
+.highlight code {
+  background-color: transparent;
+  padding: 0;
+  display: block;
+}
+@layer components;
 article {
   margin-inline: auto;
   margin-bottom: calc(var(--spacing) * 16);

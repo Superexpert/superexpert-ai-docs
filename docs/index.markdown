@@ -20,6 +20,9 @@ docs:
   - name: "Using RAG (Retrieval-Augmented Generation)"
     description: "Work with large datasets by creating a corpus for AI retrieval."
     url: "/docs/retrieval-augmented-generation/"
+  - name: "Create Custom Plugins"
+    description: "Share new features with custom plugins."
+    url: "/docs/create-custom-plugins/"
 
 ---
 {% include card-list.html items=page.docs %}
